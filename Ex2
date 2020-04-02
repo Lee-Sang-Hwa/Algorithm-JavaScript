@@ -1,0 +1,26 @@
+version.1
+
+function solution(arr) {
+    var answer = [];
+    if(arr.length>=2){
+        arr.pop();
+        return arr;
+    }
+    else(arr.length=1)
+        return [-1];
+}
+
+
+version. 2
+
+function solution(arr) {
+    if(arr.length>=2){
+        arr.reverse(arr.sort());
+        arr.pop();
+        var answer = arr;
+        return answer;
+    }
+    else
+        return [-1];
+}
+
