@@ -1,0 +1,19 @@
+function solution(a, b) {
+    var answer = 0;
+    var i=0;
+    if(a>b){
+        for(i=b; i<=a; i++){
+            answer=answer+i;
+        }
+        return answer;    
+    }
+    else if(b>a){
+        for(i=a; i<=b; i++){
+            answer=answer+i;
+        }
+            return answer;    
+    } 
+    
+    else (a==b)
+        return a;
+}
