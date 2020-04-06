@@ -1,0 +1,16 @@
+function solution(n) {
+    var answer = '';
+    var n1='수';
+    var n2='박';
+    if (n%2==0){
+        for(var i=0; i<=(n/2)-1; i++){
+            answer=answer+n1+n2;
+        }
+        return answer;
+    }
+    else 
+        for(var i=0; i<(n/2)-1; i++){
+            answer=answer+n1+n2;
+        }
+    return answer+n1;    
+    }
