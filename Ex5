@@ -9,5 +9,5 @@ function solution(s) {
     else 
         var n = Math.round(s.length/2); 
         answer=s[n-1];
-    return answer;
+    return answer;   
 }
