@@ -1,0 +1,13 @@
+function solution(s) {
+    var answer = '';
+    
+    if (s.length%2==0){
+        var n = s.length/2;
+        answer=s.substring(n-1,n+1);
+        return answer;
+    }
+    else 
+        var n = Math.round(s.length/2); 
+        answer=s[n-1];
+    return answer;
+}
