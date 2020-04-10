@@ -1,0 +1,13 @@
+function solution(s) {
+    var n=0;
+    for(var i=0; i<s.length; i++){
+        if (48<=s.charCodeAt(i) && s.charCodeAt(i)<=57){
+            n++;
+        }
+        else
+            return false;
+    }
+    if(n==s.length){
+    return true;
+    }
+}
