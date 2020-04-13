@@ -1,0 +1,19 @@
+function solution(s){
+    var a=0; var b=0;
+    for(var i=0; i<s.length; i++){
+        if(s.charCodeAt(i)==80 || s.charCodeAt(i)==112){
+            a++;
+        }
+        else if(s.charCodeAt(i)==89 || s.charCodeAt(i)==121){
+            b++;
+        }
+    }
+    if (a==b){
+        return true;
+    }
+    else if(a==0 && b==0){
+        return true;
+    }
+    else
+        return false;
+}
