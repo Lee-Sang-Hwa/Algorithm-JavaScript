@@ -1,0 +1,20 @@
+function solution(arr1) {
+    var arr2=arr1.slice(0);
+    
+    var sortfunc=function(a,b){
+        return b-a;        
+    }   
+    arr2.sort(sortfunc);
+    arr2=arr2.pop();
+    
+    if(arr1.length!=1){
+        for(var i=0; i<arr1.length; i++){
+            if(arr1[i]==arr2){
+            arr1.splice(arr1.indexOf(arr2),1);
+            }
+        }
+    return arr1;
+    }
+    else
+        return [-1];
+}
