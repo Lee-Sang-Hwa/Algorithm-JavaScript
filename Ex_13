@@ -1,0 +1,17 @@
+function solution(arr, divisor) {
+    var answer = [];
+    var sortfunc=function(a,b){
+        return a-b;
+    }
+    arr.sort(sortfunc);
+    for (var i=0; i<arr.length; i++){
+        if(arr[i]%divisor==0){
+            answer.push(arr[i]);
+        }
+    }
+    if(answer.length>0){
+        return answer;
+    }
+    else
+        return [-1];    
+}
