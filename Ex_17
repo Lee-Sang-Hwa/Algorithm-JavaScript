@@ -1,0 +1,9 @@
+function solution(s1) {
+    var s2=[];
+    for(var i=0; i<s1.length; i++){
+        s2[i]=s1[i];
+    }
+    s2.sort();
+    s2.reverse();
+    return s2.join('');
+}
